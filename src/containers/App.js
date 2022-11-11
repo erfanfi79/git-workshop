@@ -16,7 +16,9 @@ class App extends React.Component {
                 path={route.path}
                 exact={route.exact}
                 element={
+                  <route.layout>
                     <route.component />
+                  </route.layout>
                 }
               />
             );
